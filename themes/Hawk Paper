@@ -1,0 +1,26 @@
+# Hawk Paper — adapted from pnettto/hawk
+# Source: https://github.com/pnettto/hawk/blob/5dcbc4416092e7696ad7693e370a42628b4c74e7/app/public/css/themes.css
+# UI colors are exact CSS tokens; ANSI hues are complementary adaptations.
+background = #ece7d9
+foreground = #15140f
+cursor-color = #b03a2e
+cursor-text = #fff8f0
+selection-background = #b03a2e
+selection-foreground = #fff8f0
+
+palette = 0=#15140f
+palette = 1=#a63327
+palette = 2=#42733d
+palette = 3=#86620c
+palette = 4=#35668a
+palette = 5=#88527d
+palette = 6=#277370
+palette = 7=#f4f0e6
+palette = 8=#6b675a
+palette = 9=#8f2e23
+palette = 10=#3b6436
+palette = 11=#74560c
+palette = 12=#305976
+palette = 13=#76486b
+palette = 14=#246460
+palette = 15=#ece7d9

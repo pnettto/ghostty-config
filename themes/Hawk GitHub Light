@@ -1,0 +1,26 @@
+# Hawk GitHub Light — adapted from pnettto/hawk
+# Source: https://github.com/pnettto/hawk/blob/5dcbc4416092e7696ad7693e370a42628b4c74e7/app/public/css/themes.css
+# UI colors are exact CSS tokens; ANSI hues are complementary adaptations.
+background = #eaeef2
+foreground = #0b0f15
+cursor-color = #0550ae
+cursor-text = #f6f8fa
+selection-background = #0550ae
+selection-foreground = #f6f8fa
+
+palette = 0=#0b0f15
+palette = 1=#b91c1c
+palette = 2=#116329
+palette = 3=#7d4e00
+palette = 4=#0550ae
+palette = 5=#7e4ed9
+palette = 6=#096b78
+palette = 7=#d8dee4
+palette = 8=#646d77
+palette = 9=#9d1a1b
+palette = 10=#105626
+palette = 11=#6b4403
+palette = 12=#064696
+palette = 13=#6c44ba
+palette = 14=#095c68
+palette = 15=#eaeef2

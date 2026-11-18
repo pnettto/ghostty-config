@@ -1,0 +1,26 @@
+# Hawk Dracula — adapted from pnettto/hawk
+# Source: https://github.com/pnettto/hawk/blob/5dcbc4416092e7696ad7693e370a42628b4c74e7/app/public/css/themes.css
+# UI colors are exact CSS tokens; ANSI hues are complementary adaptations.
+background = #282a36
+foreground = #fcfcf8
+cursor-color = #ff79c6
+cursor-text = #1a1b22
+selection-background = #ff79c6
+selection-foreground = #1a1b22
+
+palette = 0=#282a36
+palette = 1=#ff5555
+palette = 2=#50fa7b
+palette = 3=#f1fa8c
+palette = 4=#bd93f9
+palette = 5=#ff79c6
+palette = 6=#8be9fd
+palette = 7=#cfd5ee
+palette = 8=#8f919b
+palette = 9=#ff706f
+palette = 10=#6cfa8f
+palette = 11=#f3fa9d
+palette = 12=#c7a4f9
+palette = 13=#ff8ece
+palette = 14=#9decfc
+palette = 15=#fcfcf8

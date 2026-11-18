@@ -1,0 +1,26 @@
+# Hawk Solarized Light — adapted from pnettto/hawk
+# Source: https://github.com/pnettto/hawk/blob/5dcbc4416092e7696ad7693e370a42628b4c74e7/app/public/css/themes.css
+# UI colors are exact CSS tokens; ANSI hues are complementary adaptations.
+background = #f1e8cf
+foreground = #002b36
+cursor-color = #167873
+cursor-text = #f5efd6
+selection-background = #167873
+selection-foreground = #f5efd6
+
+palette = 0=#002b36
+palette = 1=#b1322e
+palette = 2=#676e03
+palette = 3=#826406
+palette = 4=#1f6ca7
+palette = 5=#9e4383
+palette = 6=#157571
+palette = 7=#e6dcbd
+palette = 8=#5c6c60
+palette = 9=#95312f
+palette = 10=#57630b
+palette = 11=#6d5b0e
+palette = 12=#1a6295
+palette = 13=#853f77
+palette = 14=#126968
+palette = 15=#f1e8cf

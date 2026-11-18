@@ -1,0 +1,26 @@
+# Hawk Gruvbox Dark — adapted from pnettto/hawk
+# Source: https://github.com/pnettto/hawk/blob/5dcbc4416092e7696ad7693e370a42628b4c74e7/app/public/css/themes.css
+# UI colors are exact CSS tokens; ANSI hues are complementary adaptations.
+background = #282828
+foreground = #fdf3da
+cursor-color = #fabd2f
+cursor-text = #1d1c1a
+selection-background = #fabd2f
+selection-foreground = #1d1c1a
+
+palette = 0=#282828
+palette = 1=#fb5540
+palette = 2=#b8bb26
+palette = 3=#fabd2f
+palette = 4=#83a598
+palette = 5=#d3869b
+palette = 6=#8ec07c
+palette = 7=#ead9b3
+palette = 8=#988e81
+palette = 9=#fb6e59
+palette = 10=#c3c443
+palette = 11=#fac64a
+palette = 12=#97b1a3
+palette = 13=#da97a5
+palette = 14=#a0c88b
+palette = 15=#fdf3da

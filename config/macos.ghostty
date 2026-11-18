@@ -1,0 +1,5 @@
+# Restore window layout.
+window-save-state = always
+
+# Swedish keyboard: preserve Option for @, |, braces, etc.
+macos-option-as-alt = false
