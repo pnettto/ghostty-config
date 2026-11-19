@@ -1,19 +1,21 @@
-# Comfortable text and breathing room.
+# Shared settings for macOS and Linux.
+
+# Text size and window padding.
 font-size = 14
 adjust-cell-height = 8%
 window-padding-x = 12
 window-padding-y = 10
 
-# Frosted glass and inactive splits.
+# Background transparency, blur, and inactive split contrast.
 background-opacity = 0.9
 background-blur = true
 unfocused-split-opacity = 0.8
 
-# Drop-down terminal.
+# Quick terminal: open a drop-down terminal from anywhere.
 keybind = global:super+zero=toggle_quick_terminal
 quick-terminal-position = top
 quick-terminal-size = 45%
 quick-terminal-autohide = true
 
-# Reload without punctuation.
+# Reload the config with Cmd+Shift+R on macOS.
 keybind = super+shift+r=reload_config

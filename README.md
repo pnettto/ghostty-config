@@ -4,6 +4,19 @@ One-way, copy-based deployment of my Ghostty preferences and ten Hawk themes.
 No symlinks, background sync, deployment history, backups, or runtime state in
 this repository. Requires Git and Python 3; no Python packages to install.
 
+## Where to make changes
+
+| To change… | Edit |
+| --- | --- |
+| Font size, spacing, transparency, or shared shortcuts | `config/common.ghostty` |
+| macOS window restore or Option key behavior | `config/macos.ghostty` |
+| Which theme is selected | `DEFAULT_THEME` in `setup.py` |
+| A theme's text, cursor, selection, or ANSI colors | The matching file in `themes/` |
+| How files are copied and included in Ghostty's config | `setup.py` (launched by `setup.sh`) |
+
+Edit the checkout, not the deployed copies under `repo-managed/`. Run
+`./setup.sh apply` and reload Ghostty to see your changes.
+
 ## First use
 
 ```sh
@@ -83,20 +96,21 @@ preferences are deployed only on macOS. Compositor support determines whether
 Linux supports global shortcuts, blur, and the quick terminal; Linux deployment
 is unit-tested, not tested on a live Linux desktop.
 
-## Layout
+## What `apply` installs
 
 ```text
-config/common.ghostty   Shared preferences
-config/macos.ghostty    macOS-specific preferences
-themes/                Custom Hawk themes
-setup.sh               Command entry point
-setup.py               Standard-library deployment implementation
-tests/test_setup.py    Isolated deployment tests
+<Ghostty config directory>/
+├── config or config.ghostty       Your existing file, with one optional include
+└── repo-managed/
+    ├── config.ghostty             Generated entry point; selects the theme
+    ├── common.ghostty             Shared settings, copied from the repo
+    ├── macos.ghostty              Copied only on macOS
+    └── themes/                    Copies of the Hawk themes
 ```
 
-The deployed entry point selects `Hawk Gruvbox Dark` by absolute path inside the
-managed folder; existing themes in Ghostty's normal theme directory are untouched.
-Change the selected theme in `setup.py` if desired.
+The generated entry point selects `Hawk Gruvbox Dark` by absolute path and
+includes `common.ghostty`, then `macos.ghostty` on macOS. Ghostty's normal theme
+directory is untouched.
 
 ## Checks
 

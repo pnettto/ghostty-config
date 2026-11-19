@@ -55,6 +55,25 @@ class DeploymentTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             setup.deploy("unapply", self.config)
 
+    def test_unapply_preserves_other_includes(self):
+        local_include = b"config-file = ?local.ghostty\n"
+        self.config.write_bytes(local_include)
+        setup.deploy("apply", self.config)
+        setup.deploy("unapply", self.config)
+        self.assertEqual(self.config.read_bytes(), local_include)
+
+    def test_macos_entry_loads_shared_then_platform_settings(self):
+        managed = setup.deploy("apply", self.config, platform="darwin")
+        entry_lines = (managed / "config.ghostty").read_text().splitlines()
+        theme = managed / "themes" / setup.DEFAULT_THEME
+        self.assertTrue(theme.is_file())
+        self.assertEqual(entry_lines, [
+            f"theme = {theme}",
+            "config-file = common.ghostty",
+            "config-file = macos.ghostty",
+        ])
+        self.assertTrue((managed / "macos.ghostty").is_file())
+
     def test_linux_omits_macos_settings(self):
         managed = setup.deploy("apply", self.config, platform="linux")
         self.assertNotIn("macos", (managed / "config.ghostty").read_text())

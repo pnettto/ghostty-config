@@ -1,4 +1,6 @@
-# Restore window layout.
+# macOS-only settings.
+
+# Restore the window layout after quitting and reopening Ghostty.
 window-save-state = always
 
 # Swedish keyboard: preserve Option for @, |, braces, etc.
